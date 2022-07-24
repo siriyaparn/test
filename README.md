@@ -1,13 +1,22 @@
-// Prepare a simple Markdown example
-var code = "### Hello World" +
-        "\r\n" +
-        "[visit applications](https://aspose.com)";
-// Create a Markdown file
-System.IO.File.WriteAllText(dataDir + "document.md", code);
+# DS270702-SticksInThePipe
+## _The Pipe Game is the game that allows you to play with Python._
+The Rule : The player that takes the last stick will lose.
+- You play as the Player1
+- Python plays as the Player2
 
-// Convert Markdown to HTML document
-//Aspose.Html.Converters.Converter.ConvertMarkdown("document.md", "document.html");
-HTMLDocument document = Aspose.Html.Converters.Converter.ConvertMarkdown(dataDir + "document.md");
+## _Game Start!_
+### To start the game, you have to input more than one stick.
+<img src="Picture/Start%20Game.png" width="450">
 
-// Invoke the ConvertHTML method to convert the HTML to PDF.
-Aspose.Html.Converters.Converter.ConvertHTML(document, new Aspose.Html.Saving.PdfSaveOptions(), dataDir + "output.pdf");
+## _The result of the program_
+### a) In case of you win! : 
+- The program will show the result as below.
+<img src="Picture/Player%20wins.png" width="450">
+
+### b) In case of Python wins! : 
+- The program will show the result as below.
+<img src="Picture/Computer%20wins.png" width="450">
+
+### c) In case of ERROR : 
+- The program will show the result as below.
+<img src="Picture/ERROR.png" width="450">
